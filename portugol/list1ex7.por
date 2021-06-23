@@ -23,7 +23,7 @@ programa
 			d = (Matematica.raiz((Matematica.potencia((x2-x1),2))+(Matematica.potencia((y2-y1),2)),2 ))
 
 			escreva("O valor de d é : ", d)
-			 
+			
 			
 		
 	}
@@ -33,7 +33,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 450; 
+ * @POSICAO-CURSOR = 449; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
