@@ -12,8 +12,6 @@ programa
 		leia(nome)
 		escreva("Qual é a sua idade em dias? ")
 		leia(idade)
-		/*escreva("Qual é o dia de hoje? ")
-		leia("")*/
 		escreva("Poderia me diser quantos meses se passaram desde o seu aniversário? ")
 		leia(meses)
 		escreva("Quantos dias se passaram nesse último mês? ")
@@ -37,7 +35,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 40; 
+ * @POSICAO-CURSOR = 487; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
