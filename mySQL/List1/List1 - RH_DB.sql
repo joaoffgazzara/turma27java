@@ -1,0 +1,1 @@
+create database rh_db;
