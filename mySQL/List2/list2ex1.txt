@@ -1,0 +1,48 @@
+create database db_generation_game_online;
+
+use db_generation_game_online;
+
+create table tb_classe (
+	id_classe varchar (20) not null,
+    skill_1 varchar (20) not null,
+    skill_2 varchar (20) not null,
+    skill_3 varchar (20) not null,
+    
+    primary key (id_classe)
+);
+
+insert into tb_classe (id_classe, skill_1, skill_2, skill_3) values ("Knight", "Corte duplo", "Uppercut", "Self healing");
+insert into tb_classe (id_classe, skill_1, skill_2, skill_3) values ("Healer", "Self healing", "Minor Damage", "Group Healing");
+insert into tb_classe (id_classe, skill_1, skill_2, skill_3) values ("Rogue", "Corte Quadruplo", "Poisoned Blade", "Shuriken");
+insert into tb_classe (id_classe, skill_1, skill_2, skill_3) values ("Wizard", "Fireball", "Shockwave", "Find Familiar");
+insert into tb_classe (id_classe, skill_1, skill_2, skill_3) values ("Tank", "Shield Wall", "Hammer Time", "Tankiest Tank");
+
+
+create table tb_personagem (
+	id_player int (15) auto_increment not null,
+    nick_name varchar (15) not null,
+    lvl int not null,
+    poder_de_ataque bigint not null,
+    health_points bigint not null,
+    magic_points bigint not null,
+    classe varchar (20) not null,
+    
+    primary key(id_player),
+	foreign key(classe) references tb_classe(id_classe)
+);
+
+insert into tb_personagem (nick_name, lvl, poder_de_ataque, health_points, magic_points, classe) values ("darklord", 33, 4500, 6000, 2300, "Knight");
+insert into tb_personagem (nick_name, lvl, poder_de_ataque, health_points, magic_points, classe) values ("lightlord", 23, 1200, 2500, 7000, "Healer");
+insert into tb_personagem (nick_name, lvl, poder_de_ataque, health_points, magic_points, classe) values ("edgelord", 35, 5500, 3500, 3000, "Rogue");
+insert into tb_personagem (nick_name, lvl, poder_de_ataque, health_points, magic_points, classe) values ("magiclord", 38, 3500, 2000, 10000, "Wizard");
+insert into tb_personagem (nick_name, lvl, poder_de_ataque, health_points, magic_points, classe) values ("mightylord", 28, 2800, 12000, 1500, "Tank");
+
+
+-- select * from tb_personagem where poder_de_ataque > 2000;
+-- select * from tb_personagem where poder_de_ataque between 1000 and 2000;
+-- select * from tb_personagem where nick_name like "%m%";
+-- select * from tb_classe inner join tb_personagem on tb_personagem.classe = tb_classe.id_classe;
+-- select * from tb_classe inner join tb_personagem on tb_personagem.classe = tb_classe.id_classe where classe = "Healer"
+
+
+
