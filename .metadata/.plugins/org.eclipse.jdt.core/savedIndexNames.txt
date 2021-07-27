@@ -1,0 +1,2 @@
+INDEX VERSION 1.131+\\BRSPO-FS-001\Users$\gian.gazzara\Desktop\turma27java\.metadata\.plugins\org.eclipse.jdt.core
+525264009.index
